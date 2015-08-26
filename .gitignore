@@ -1,1 +1,4 @@
 env
+.env
+db.*
+tutorial/__pycache__/
