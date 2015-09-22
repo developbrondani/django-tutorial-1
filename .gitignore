@@ -1,4 +1,13 @@
 env
 .env
 db.*
+.Python
+*.pyc
+*.pyo
+*.db
+.DS_Store
+.coverage.orig
+*.orig
+*.sublime*
+data/*
 tutorial/__pycache__/
