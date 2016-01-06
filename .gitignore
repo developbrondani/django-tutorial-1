@@ -11,3 +11,4 @@ db.*
 *.sublime*
 data/*
 tutorial/__pycache__/
+.idea/
