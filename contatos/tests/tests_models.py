@@ -1,6 +1,8 @@
 from django.test import TestCase
 from model_mommy import mommy
 
+from contatos.models import Contato
+
 
 class ContatoTest(TestCase):
 

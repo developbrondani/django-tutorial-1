@@ -6,7 +6,7 @@ from .choices import UF
 
 class Contato(models.Model):
     nome = models.CharField(_('Nome'), max_length=60)
-    nascimento = models.DateTime(blank=False, null=True)
+    nascimento = models.DateTimeField(blank=False, null=True)
     telefone_fixo = models.CharField(_('Telefone fixo'), max_length=20)
     telefone_celular = models.CharField(_('Telefone celular'), max_length=20)
     email = models.EmailField(_('E-mail'), max_length=300, unique=True)
@@ -21,7 +21,7 @@ class Contato(models.Model):
     atualizado_em = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ('-name',)
+        ordering = ('-nome',)
         verbose_name = _('Contato')
         verbose_name_plural = _('Contatos')
 
